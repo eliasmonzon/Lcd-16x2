@@ -2,10 +2,7 @@ from lcd16x2 import LCD_16x2
 import machine
 import utime
 
-boton_1 = machine.Pin(0, machine.Pin.IN, machine.Pin.PULL_UP)
-boton_2 = machine.Pin(1, machine.Pin.IN, machine.Pin.PULL_UP)
-boton_3 = machine.Pin(2, machine.Pin.IN, machine.Pin.PULL_UP)
-boton_4 = machine.Pin(3, machine.Pin.IN, machine.Pin.PULL_UP)
+
 
 '''
 Configura los pines a usar de la pico para
