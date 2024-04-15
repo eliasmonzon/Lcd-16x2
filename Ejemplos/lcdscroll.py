@@ -13,7 +13,7 @@ while True:
     
     
     # Simular el desplazamiento del texto
-    for i in range(len(texto_completo) ):  # Longitud del texto menos la longitud de la pantalla (16 caracteres)
+    for i in range(len(texto_completo)+1 ):  # Longitud del texto menos la longitud de la pantalla (16 caracteres)
         # Obtener la subcadena desplazada
         
         subcadena_visible = texto_completo[i:i+16]  # Mostrar solo los siguientes 16 caracteres
