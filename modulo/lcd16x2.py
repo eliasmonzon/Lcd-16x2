@@ -57,9 +57,7 @@ class LCD_16x2:
         for char in string:
             self.data(ord(char))
 
-    def message(self, message, row=1, col=0):
-        self.clear()
-        self.display_string(message, row, col)
-
-
-
+    def create_char(self, location, pattern):
+        self.command(0x40 + (location * 8))  # Set CGRAM address
+        for line in pattern:
+            self.data(line)
