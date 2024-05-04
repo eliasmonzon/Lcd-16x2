@@ -2,8 +2,9 @@
 from lcd16x2 import LCD_16x2 
 import utime
 
-# Inicializar el LCD con los pines correspondientes
-lcd = LCD_16x2(rs_pin=16, e_pin=17, d4_pin=10, d5_pin=11, d6_pin=12, d7_pin=13)
+# Configura los pines a usar de la pico para la conexión del lcd a 4 bits
+# RS, E, D4, D5, D6, D7
+lcd = LCD_16x2(16,17,10,11,12,13) 
 lcd.clear()
 # Texto a mostrar en el LCD
 texto_completo = "EL MUNDO ES TUYO"
